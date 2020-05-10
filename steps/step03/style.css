@@ -1,0 +1,67 @@
+/* Global variables for changing colours across the site */
+:root {
+    --accent: #226997;
+		--main: #333;
+		--light: #666;
+		--lighter: #f3f3f3;
+		--border: #e6e6e6;
+		--bg: #fff;
+}
+
+/* Format Nav Bar */
+ul.nav {
+	list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: var(--main);
+}
+
+li.nav {
+	float: left;
+}
+
+li.nav a {
+	display: block;
+  color: var(--bg);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.nav li.nav a:hover:not(.active){
+	background-color: var(--accent);
+}
+
+.active {
+	background-color: var(--accent);
+}
+
+/* Format the main body of the website */
+body {
+	background: var(--bg);
+	color: var(--main);
+	font-family: sans-serif;
+	font-size: 1.1em;
+	display: block;
+	text-align: left;
+	width: 800px;
+	margin: 0 auto;
+}
+
+/* Format the banner image on the home page */
+img.home-banner {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	width: 100%;
+}
+
+/* Format hyperlinks */
+a, a:visited {
+	color: var(--accent);
+	text-decoration: none;
+}
+
+a:hover, a:focus, a:active {
+	text-decoration: underline;
+}

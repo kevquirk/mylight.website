@@ -1,0 +1,171 @@
+/* Global variables for changing colours across the site */
+:root {
+    --accent: #226997;
+		--main: #333;
+		--light: #666;
+		--lighter: #f3f3f3;
+		--border: #e6e6e6;
+		--bg: #fff;
+}
+
+/* Make the website responsive */
+@media screen and (max-width: 100%) {
+  .main {
+    width: 800px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  ul.nav li {float: none;}
+}
+
+.main {
+  float: center;
+  width: 100%;
+	max-width: 800px;
+	margin: 0 auto;
+
+}
+
+/* Format Nav Bar */
+ul.nav {
+	list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: var(--main);
+	font-family: "fira";
+}
+
+li.nav {
+	float: left;
+}
+
+li.nav a {
+	display: block;
+  color: var(--bg);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.nav li.nav a:hover:not(.active){
+	background-color: var(--accent);
+  transition: all 0.12s ease;
+}
+
+.active {
+	background-color: var(--accent);
+}
+
+/* Format the main body of the website */
+body {
+	background: var(--bg);
+	color: var(--main);
+	line-height: 1.5;
+	font-family: "merriweather";
+}
+
+/* Typography */
+p {
+  font-size: 1.1em;
+	margin-bottom: 1.5em;
+}
+
+li {
+  font-size: 1.1em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: "fira";
+}
+
+h1 {
+	font-size: 2em;
+}
+
+h2 {
+	font-size: 1.8em;
+}
+
+h3 {
+	font-size: 1.6em;
+}
+
+h4 {
+	font-size: 1.4em;
+}
+
+h5 {
+	font-size: 1.2em;
+}
+
+h6 {
+	font-size: 1.1em;
+}
+
+blockquote {
+    margin-left: 2em;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    padding: .4rem .8rem;
+    border-left: .35rem solid var(--accent);
+    color: var(--light);
+    font-style: italic;
+}
+
+cite {
+    font-style: italic;
+    font-size: 0.8em;
+}
+
+code {
+    font-size: 1.2em;
+    font-family: monospace;
+    color: var(--accent);
+    background: #eaf4fa;
+    line-height: 1.25;
+    padding: .1rem .2rem;
+}
+
+/* Format the images */
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+img.home-banner {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	max-width: 100%;
+	height: auto;
+}
+
+/* Format hyperlinks & buttons */
+a, a:visited {
+	color: var(--accent);
+	text-decoration: none;
+}
+
+a:hover, a:focus, a:active {
+	text-decoration: underline;
+}
+
+.button {
+	padding: 0.5em .5em;
+	margin: 0 .5em 0 0;
+	border: 1px solid var(--main);
+	border-radius: 4em;
+	color: var(--main);
+	transition: 0.5s;
+	line-height: 3rem;
+	white-space: nowrap;
+}
+
+.button:hover, .button:active, .button:focus, .button:visited {
+	padding: 0.5em .5em;
+	background: var(--lighter);
+	border-radius: 4em;
+	color: var(--main);
+	text-decoration: none;
+}

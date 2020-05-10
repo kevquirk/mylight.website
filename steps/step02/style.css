@@ -1,0 +1,38 @@
+/* Global variables for changing colours across the site */
+:root {
+    --accent: #226997;
+		--main: #333;
+		--light: #666;
+		--lighter: #f3f3f3;
+		--border: #e6e6e6;
+		--bg: #fff;
+}
+
+/* Format the main body of the website */
+body {
+	background: var(--bg);
+	color: var(--main);
+	font-family: sans-serif;
+	font-size: 1.1em;
+	display: block;
+	text-align: left;
+	width: 800px;
+	margin: 0 auto;
+}
+
+/* Format the banner image on the home page */
+img.home-banner {
+	padding-top: 60px;
+	padding-bottom: 20px;
+	width: 100%;
+}
+
+/* Format hyperlinks */
+a, a:visited {
+	color: var(--accent);
+	text-decoration: none;
+}
+
+a:hover, a:focus, a:active {
+	text-decoration: underline;
+}

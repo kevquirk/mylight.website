@@ -1,0 +1,208 @@
+/* Global variables for changing colours across the site */
+:root {
+    --accent: #226997;
+		--main: #333;
+		--light: #666;
+		--lighter: #f3f3f3;
+		--border: #e6e6e6;
+		--bg: #fff;
+}
+
+/* Make the website responsive */
+@media screen and (max-width: 100%) {
+  .main, .header, .footer {
+    width: 800px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  ul.nav li {float: none;}
+}
+
+.main, .header, .footer {
+  float: center;
+  width: 100%;
+	max-width: 800px;
+	margin: 0 auto;
+
+}
+
+/* Format the header */
+p.menu {
+	display: inline-block;
+	float: right;
+}
+
+.menubtn {
+	border: 1px solid var(--main);
+  color: var(--main);
+  padding: 0.5em 0.5em;
+	cursor: pointer;
+	border-radius: 1.5em;
+	transition: 0.2s;
+	white-space: nowrap;
+	font-family: "fira";
+}
+
+.menubtn:hover {
+	background: var(--lighter);
+	color: var(--main);
+	text-decoration: none;
+}
+
+a.menubtn, a.menubtn:visited {
+	color: var(--main);
+  font-size: 0.8em
+}
+
+a.menubtn:hover, a.menubtn:focus, a.menubtn:active {
+	border-bottom: 1px solid;
+}
+
+ul.menu {
+	list-style: none;
+	font-family: "fira";
+	line-height: 1.7em;
+}
+
+p.sitelogo {
+	font-family: "fira";
+	font-size: 1.5em;
+	display: inline-block;
+	float: left;
+  padding-top: 0.5em;
+	margin: 0 auto;
+}
+
+a.sitelogo, a.sitelogo:hover, a.sitelogo:visited, a.sitelogo:active {
+	text-decoration: none;
+  color: var(--main);
+}
+
+/* Format the main body text */
+body {
+	background: var(--bg);
+	color: var(--main);
+	line-height: 1.5;
+	font-family: "merriweather";
+}
+
+/* Typography tweaks */
+p {
+	margin-bottom: 1.5em;
+  font-size: 1.1em;
+}
+
+p.meta {
+  font-size: 0.9rem;
+  font-style: italic;
+  color: var(--light);
+  margin-top: -1em;
+}
+
+li {
+  font-size: 1.1em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	clear: both;
+	font-family: "fira";
+}
+
+h1 {
+	font-size: 2em;
+}
+
+h2 {
+	font-size: 1.8em;
+  margin-top: 2em;
+}
+
+h3 {
+	font-size: 1.6em;
+}
+
+h4 {
+	font-size: 1.4em;
+}
+
+h5 {
+	font-size: 1.2em;
+}
+
+h6 {
+	font-size: 1.1em;
+}
+
+i.hash {
+  font-size: 0.8em;
+  color: var(--light);
+}
+
+blockquote {
+    margin-left: 2em;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    padding: .4rem .8rem;
+    border-left: .35rem solid var(--accent);
+    color: var(--light);
+    font-style: italic;
+}
+
+code, kbd, tt, var {
+    font-size: 1.2em;
+    color: var(--accent);
+    background: #eaf4fa;
+    line-height: 1.25;
+    padding: .1rem .2rem;
+}
+
+/* Format the images */
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+img.home-banner {
+	padding-bottom: 20px;
+	max-width: 100%;
+	height: auto;
+}
+
+/* Format hyperlinks & buttons */
+a, a:visited {
+	color: var(--accent);
+	text-decoration: none;
+}
+
+a:hover, a:focus, a:active {
+	text-decoration: underline;
+}
+
+.button {
+	padding: 0.5em .5em;
+	margin: 0 .5em 0 0;
+	border: 1px solid var(--main);
+	border-radius: 4em;
+	color: var(--main);
+	transition: 0.5s;
+	line-height: 3rem;
+	white-space: nowrap;
+}
+
+.button:hover, .button:active, .button:focus, .button:visited {
+	background: var(--lighter);
+	color: var(--main);
+	text-decoration: none;
+}
+
+/* Format the footer */
+.footer {
+	margin-top: 6em;
+	text-align: center;
+	border-top: 1px solid var(--border);
+}
+
+.footer p {
+  font-size: 0.75em;
+}
