@@ -82,8 +82,8 @@ a.sitelogo, a.sitelogo:hover, a.sitelogo:visited, a.sitelogo:active {
   background: var(--lighter);
   color: var(--main);
   text-align: center;
-  margin-top: .5em;
-  margin-bottom: 3em;
+  margin-top: 2em;
+  margin-bottom: 2em;
   border-radius: 8px;
 }
 
