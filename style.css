@@ -10,7 +10,7 @@
 
 /* Make the website responsive */
 @media screen and (max-width: 100%) {
-  .main, .header, .footer {
+  .main, .header, .banner, .footer {
     width: 800px;
   }
 }
@@ -19,8 +19,7 @@
   ul.nav li {float: none;}
 }
 
-.main, .header, .footer {
-  float: center;
+.main, .header, .banner, .footer {
   width: 100%;
 	max-width: 800px;
 	margin: 0 auto;
@@ -69,7 +68,6 @@ p.sitelogo {
 	font-family: "fira";
 	font-size: 1.5em;
 	display: inline-block;
-	float: left;
   padding-top: 0.5em;
 	margin: 0 auto;
 }
@@ -77,6 +75,31 @@ p.sitelogo {
 a.sitelogo, a.sitelogo:hover, a.sitelogo:visited, a.sitelogo:active {
 	text-decoration: none;
   color: var(--main);
+}
+
+/* Format the banner div */
+.banner {
+  background: var(--lighter);
+  color: var(--main);
+  text-align: center;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  border-radius: 8px;
+}
+
+.banner-text {
+  padding: 1em .5em;
+  font-size: 2.5em;
+}
+
+span.logo_dot {
+    background-color: var(--accent);
+    font-size: 1.5em;
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    margin: 0 2px;
 }
 
 /* Format the main body text */
