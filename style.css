@@ -40,7 +40,7 @@ p.menu {
 	border-radius: 1.5em;
 	transition: 0.2s;
 	white-space: nowrap;
-	font-family: "fira";
+  font-weight: bold;
 }
 
 .menubtn:hover {
@@ -60,16 +60,15 @@ a.menubtn:hover, a.menubtn:focus, a.menubtn:active {
 
 ul.menu {
 	list-style: none;
-	font-family: "fira";
 	line-height: 1.7em;
 }
 
 p.sitelogo {
-	font-family: "fira";
 	font-size: 1.5em;
 	display: inline-block;
   padding-top: 0.5em;
 	margin: 0 auto;
+  font-weight: bold;
 }
 
 a.sitelogo, a.sitelogo:hover, a.sitelogo:visited, a.sitelogo:active {
@@ -90,6 +89,7 @@ a.sitelogo, a.sitelogo:hover, a.sitelogo:visited, a.sitelogo:active {
 .banner-text {
   padding: 1em .5em;
   font-size: 2.5em;
+  font-weight: bold;
 }
 
 span.logo_dot {
@@ -107,7 +107,7 @@ body {
 	background: var(--bg);
 	color: var(--main);
 	line-height: 1.5;
-	font-family: "merriweather";
+	font-family: pt-sans,-apple-system,BlinkMacSystemFont,avenir next,avenir,helvetica,helvetica neue,ubuntu,roboto,noto,segoe ui,arial,sans-serif;
 }
 
 /* Typography tweaks */
@@ -129,7 +129,7 @@ li {
 
 h1, h2, h3, h4, h5, h6 {
 	clear: both;
-	font-family: "fira";
+  font-weight: bold;
 }
 
 h1 {
